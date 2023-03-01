@@ -1,0 +1,10 @@
+classe,assunto,vara,foro,juiz,data_inicio_processo,data_fim_processo,sentenca,acolhido,recurso
+Trabalhista,Acidente de Trabalho,1ª Vara do Trabalho de São Paulo,TRT 2ª Região,Juiz João Silva,2022-01-01,2022-08-01,Procedente,SIM,NÃO
+Cível,Contrato de Aluguel,1ª Vara Cível de Belo Horizonte,TJMG,Juiz Maria Santos,2022-02-15,2022-10-15,Improcedente,NÃO,SIM
+Criminal,Tráfico de Drogas,2ª Vara Criminal de Curitiba,TJPR,Juiz Paulo Souza,2022-03-20,2022-11-20,Procedente,SIM,NÃO
+Trabalhista,Rescisão Indireta,3ª Vara do Trabalho de Brasília,TRT 10ª Região,Juiz Ana Oliveira,2022-04-30,2022-12-30,Improcedente,NÃO,SIM
+Cível,Divórcio Litigioso,2ª Vara de Família de São Paulo,TJSP,Juiz Carlos Dias,2022-05-10,2023-01-10,Procedente,SIM,NÃO
+Criminal,Homicídio,1ª Vara Criminal de Porto Alegre,TJRS,Juiz Laura Pereira,2022-06-15,2023-02-15,Procedente,SIM,NÃO
+Trabalhista,Assédio Moral,2ª Vara do Trabalho de Salvador,TRT 5ª Região,Juiz André Santos,2022-07-20,2023-03-20,Improcedente,NÃO,SIM
+Cível,Indenização por Danos Morais,1ª Vara Cível de Recife,TJPE,Juiz Ana Silva,2022-08-30,2023-04-30,Procedente,SIM,NÃO
+Criminal,Estupro,2ª Vara Criminal de Fortaleza,TJCE,Juiz Pedro Lima,2022-09-10,2023-05-10,Procedente,SIM,NÃO
