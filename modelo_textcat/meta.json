@@ -1,0 +1,30 @@
+{
+  "lang":"pt",
+  "name":"model",
+  "version":"0.0.0",
+  "spacy_version":">=2.3.3",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"08fc87611",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":"spacy_pretrained_vectors"
+  },
+  "pipeline":[
+    "textcat"
+  ],
+  "factories":{
+    "textcat":"textcat"
+  },
+  "labels":{
+    "textcat":[
+      "Improcedente",
+      "Procedente"
+    ]
+  }
+}
