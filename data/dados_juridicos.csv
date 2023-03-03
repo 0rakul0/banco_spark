@@ -8,3 +8,29 @@ Criminal,Homicídio,1ª Vara Criminal de Porto Alegre,TJRS,Juiz Laura Pereira,20
 Trabalhista,Assédio Moral,2ª Vara do Trabalho de Salvador,TRT 5ª Região,Juiz André Santos,2022-07-20,2023-03-20,Improcedente,NÃO,SIM
 Cível,Indenização por Danos Morais,1ª Vara Cível de Recife,TJPE,Juiz Ana Silva,2022-08-30,2023-04-30,Procedente,SIM,NÃO
 Criminal,Estupro,2ª Vara Criminal de Fortaleza,TJCE,Juiz Pedro Lima,2022-09-10,2023-05-10,Procedente,SIM,NÃO
+Cível,Indenização por Danos Materiais,2ª Vara Cível de Brasília,TJDFT,Juiz Juliana Martins,2022-10-15,2023-04-15,Improcedente,NÃO,SIM
+Trabalhista,Reintegração de Posse,3ª Vara do Trabalho de Campinas,TRT 15ª Região,Juiz Marcos Oliveira,2022-11-20,2023-05-20,Procedente,SIM,NÃO
+Criminal,Tráfico de Armas,1ª Vara Criminal de Belo Horizonte,TJMG,Juiz Fernando Souza,2022-12-30,2023-06-30,Procedente,SIM,NÃO
+Cível,Execução de Título Extrajudicial,2ª Vara Cível de Curitiba,TJPR,Juiz Carla Rodrigues,2023-01-10,2023-07-10,Procedente,SIM,NÃO
+Trabalhista,Acidente de Trabalho,1ª Vara do Trabalho de Fortaleza,TRT 7ª Região,Juiz João Pereira,2023-02-15,2023-08-15,Procedente,SIM,NÃO
+Criminal,Lavagem de Dinheiro,3ª Vara Criminal de Recife,TJPE,Juiz Ana Santos,2023-03-20,2023-09-20,Procedente,SIM,NÃO
+Cível,Revisão Contratual,1ª Vara Cível de São Paulo,TJSP,Juiz Gustavo Almeida,2023-04-30,2023-10-30,Improcedente,NÃO,SIM
+Trabalhista,Assédio Sexual,2ª Vara do Trabalho de Belo Horizonte,TRT 3ª Região,Juiz Paulo Oliveira,2023-05-10,2023-11-10,Procedente,SIM,NÃO
+Criminal,Roubo,1ª Vara Criminal de Salvador,TJBA,Juiz Marcela Silva,2023-06-15,2023-12-15,Procedente,SIM,NÃO
+Cível,Divórcio Consensual,2ª Vara de Família de Belo Horizonte,TJMG,Juiz Carla Oliveira,2023-07-20,2024-01-20,Procedente,SIM,NÃO
+Trabalhista,Rescisão Indireta,3ª Vara do Trabalho de Fortaleza,TRT 7ª Região,Juiz Roberto Santos,2023-08-30,2024-02-28,Improcedente,NÃO,SIM
+Criminal,Lesão Corporal,2ª Vara Criminal de São Paulo,TJSP,Juiz Laura Almeida,2023-09-10,2024-03-10,Procedente,SIM,NÃO
+Cível,Cobrança,1ª Vara Cível de Recife,TJPE,Juiz Marcos Santos,2023-10-15,2024-04-15,Procedente,SIM,NÃO
+Criminal,Furto,3ª Vara Criminal de São Paulo,TJSP,Juiz Ana Souza,2021-01-01,2021-07-01,Procedente,SIM,NÃO
+Trabalhista,Acidente de Trabalho,2ª Vara do Trabalho de Belo Horizonte,TRT 3ª Região,Juiz José Silva,2021-02-15,2021-09-15,Improcedente,NÃO,SIM
+Cível,Ação de Despejo,1ª Vara Cível de Curitiba,TJPR,Juiz Maria Santos,2021-03-20,2021-10-20,Procedente,SIM,NÃO
+Criminal,Tráfico de Drogas,1ª Vara Criminal de Brasília,TJDFT,Juiz Paulo Souza,2021-04-30,2021-11-30,Improcedente,NÃO,SIM
+Trabalhista,Reclamação Trabalhista,2ª Vara do Trabalho de São Paulo,TRT 2ª Região,Juiz João Oliveira,2021-05-10,2022-01-10,Procedente,SIM,NÃO
+Cível,Ação de Cobrança,2ª Vara Cível de Porto Alegre,TJRS,Juiz Carlos Dias,2021-06-15,2022-02-15,Procedente,SIM,NÃO
+Criminal,Tentativa de Homicídio,1ª Vara Criminal de Salvador,TJBA,Juiz Laura Pereira,2021-07-20,2022-03-20,Improcedente,NÃO,SIM
+Trabalhista,Horas Extras,3ª Vara do Trabalho de Recife,TRT 6ª Região,Juiz André Santos,2021-08-30,2022-04-30,Procedente,SIM,NÃO
+Cível,Execução de Título Extrajudicial,1ª Vara Cível de Fortaleza,TJCE,Juiz Ana Silva,2021-09-10,2022-05-10,Procedente,SIM,NÃO
+Criminal,Lesão Corporal,2ª Vara Criminal de Belo Horizonte,TJMG,Juiz Pedro Lima,2021-10-15,2022-06-15,Procedente,SIM,NÃO
+Trabalhista,Indenização por Acidente de Trabalho,1ª Vara do Trabalho de São Paulo,TRT 2ª Região,Juiz João Silva,2022-01-01,2022-08-01,Procedente,SIM,NÃO
+Cível,Cumprimento de Sentença,2ª Vara Cível de Belo Horizonte,TJMG,Juiz Maria Santos,2022-02-15,2022-10-15,Improcedente,NÃO,SIM
+Criminal,Tráfico de Drogas,3ª Vara Criminal de Curitiba,TJPR,Juiz Paulo Souza,2022-03-20,2022-11-20,Procedente,SIM,NÃO

@@ -3,6 +3,8 @@ import spacy
 import random
 from spacy.util import minibatch, compounding
 from spacy.gold import GoldParse
+import seaborn as sns
+import matplotlib.pyplot as plt
 from spacy.lang.pt.stop_words import STOP_WORDS
 
 
@@ -21,7 +23,7 @@ def load_data(file_path, text_col, label_col, label_map=None):
     return [(text, label) for text, label in zip(df[text_col], df[label_col])]
 
 
-def train_textcat_model(train_data, model_path, n_iter=10, dropout=0.2, batch_size=16):
+def train_textcat_model(train_data, model_path, n_iter=10, dropout=0.2, batch_size=16, lemmatize=False, remove_stopwords=False):
     """
     Treina um modelo de classificação de texto do spaCy, salva-o em um arquivo e retorna o caminho do arquivo.
     :param train_data: lista de tuplas (texto, label) de treinamento
@@ -29,6 +31,8 @@ def train_textcat_model(train_data, model_path, n_iter=10, dropout=0.2, batch_si
     :param n_iter: número de iterações de treinamento
     :param dropout: taxa de dropout
     :param batch_size: tamanho do minibatch
+    :param lemmatize: se True, aplica lematização nos textos
+    :param remove_stopwords: se True, remove as stop words dos textos
     :return: caminho do arquivo onde o modelo foi salvo
     """
     nlp = spacy.load('pt_core_news_lg')
@@ -54,13 +58,38 @@ def train_textcat_model(train_data, model_path, n_iter=10, dropout=0.2, batch_si
             docs = [nlp(text.lower()) for text in texts]
             stemmed_docs = []
             for doc in docs:
-                stemmed_docs.append(" ".join([token.lemma_ for token in doc if not token.is_stop]))
-            golds = [{"cats": {label: True}} for label in labels]
+                if lemmatize:
+                    stemmed_docs.append(" ".join([token.lemma_ for token in doc if not token.is_stop]))
+                else:
+                    stemmed_docs.append(" ".join([token.text for token in doc if not token.is_stop]))
+            if remove_stopwords:
+                golds = [{"cats": {label: True}} for label in labels]
+            else:
+                golds = [{"cats": {label: True}} for label in labels]
             nlp.update(stemmed_docs, golds, sgd=optimizer, drop=dropout, losses=losses)
 
     # Salva o modelo
     nlp.to_disk(model_path)
     return model_path
+
+
+# Define a função para gerar o mapa de calor
+def plot_textcat_heatmap(doc):
+    global token
+    labels = [label for label in doc.cats.keys()]
+    data = []
+    for token in doc:
+        row = [token.text] + [token.vector[i] for i in range(len(token.vector))]
+        data.append(row)
+    df = pd.DataFrame(data, columns=['token'] + [f'vec_{i}' for i in range(len(token.vector))])
+    df = pd.melt(df, id_vars=['token'], value_vars=[f'vec_{i}' for i in range(len(token.vector))], var_name='dim', value_name='value')
+    df['abs_value'] = df['value'].abs()
+    pivot_table = df.pivot_table(index='token', columns='dim', values='abs_value', aggfunc='max')
+    if pivot_table.size > 0:
+        sns.heatmap(pivot_table, cmap='Reds', xticklabels=True, yticklabels=True)
+        plt.show()
+    else:
+        print("A matriz de frequência está vazia.")
 
 
 # Exemplo de uso
@@ -83,6 +112,7 @@ nlp = spacy.load(model_path)
 # Testa o modelo
 text = "O réu nega ter tido qualquer envolvimento com o crime."
 doc = nlp(text)
+plot_textcat_heatmap(doc)
 if doc.cats['Procedente'] > doc.cats['Improcedente']:
     print(f"{text} é procedente")
 else:

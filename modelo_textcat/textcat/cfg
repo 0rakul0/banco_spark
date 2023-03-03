@@ -1,7 +1,7 @@
 {
   "labels":[
-    "Improcedente",
-    "Procedente"
+    "Procedente",
+    "Improcedente"
   ],
   "pretrained_vectors":null,
   "pretrained_dims":null
